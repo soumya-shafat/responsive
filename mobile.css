@@ -1,0 +1,353 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    /* font-size: 3rem; */
+    font-family: 'Oswald', sans-serif;
+    margin-top: 0;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+.h1-color{
+    color: #A59678;
+}
+/* 
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+ */
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    /* added for nav-toggle positioning */
+    position: relative;
+}
+
+header {
+    background: #2E323F;
+    padding: .7em 0;
+    text-align: center;
+}
+
+.nav {
+    width: 100%;
+}
+
+
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #072A2D;
+    color: white;
+    transition: opacity 250ms ease;
+    
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+/* made changes here from video
+   to make it more accessible.
+   
+   Works the same :) */
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    font-size: 1rem;
+}
+
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+
+    
+} 
+.nav__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav__item{
+    margin-top: .75em;
+
+}
+
+.nav__link{
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.nav__link--button{
+    padding: .25em .75em;
+    background-color: #fff;
+    color: #26424a;
+    border-radius: 100px;
+}
+.nav__link:hover,
+.nav__link:focus{
+    opacity: .75;
+}
+
+.nav__list--primary{
+    margin-bottom: 2em;
+}
+.logo {
+    height: 30px;
+}
+
+/* __________MAIN______________ */
+
+.main{
+    background-color: #3B4050;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.main__heading {
+    width: 100%;
+    margin: 0 auto;
+}
+.main__heading h1 {
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.main__para{
+    font-size: .9rem;
+    color: #6F737F;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main__para p{
+    margin-bottom: 1.5rem;
+}
+
+.main__link{
+    background-color: #A59678;
+    padding: 8px 13px;
+    border-radius: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    /* margin-top: .9rem; */
+}
+.main__link:hover {
+    opacity: .75;
+}
+/* __________SECTION___________ */
+
+.section h3{
+    color: #A59678;
+}
+.section p{
+    color: #6F737F;
+}
+
+.section1{
+    padding: 4rem 0;
+    background-color: #f1f1f1;
+}
+
+.section1__text p{
+    font-size: 1rem;
+}
+
+/* .section1__text + .section1__text{
+    margin-top: 2.5rem;
+} */
+
+.section2{
+    padding: 5rem 0;
+}
+
+.section2__left p{
+    font-size: 1rem;
+}
+
+
+/* .section2__right{
+     border: 2px solid red; 
+}  
+*/
+
+.section2__right--box{
+    text-align: center;
+    padding: 3rem 0;
+    background-color:#3B4050;
+    margin: 1rem 0;
+}
+
+.section2__right h3{
+    color: #fff;
+}
+
+.section2__right p{
+    color: #6F737F;
+    font-size: 1rem;
+}
+
+/* ______FOOTER__________ */
+
+.footer{
+    background-color: #3B4050;
+    padding: 5rem 0;
+}
+
+.footer__h1{
+    color: #fff;
+    font-size: 2.3rem;
+    text-align: center;
+}
+.footer__row{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__services--item h4{
+    color: #A59678;
+}
+
+.footer__services--item p{
+    font-size: 14px;
+    color: #6F737F;
+}
+
+.footer__services--item a{
+    font-size: 14px;
+    color: #6F737F;
+    text-decoration: none;
+}
+.footer__services--item{
+    text-align: center;
+}
+/* .footer__services--item + .footer__services--item{
+    margin-top: 2rem;
+} */
+.footer__services--item{
+    margin-top: 2rem;
+}
+@media (min-width: 800px) {
+
+    
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: auto;
+        position: relative;
+    }
+
+    .nav__list{
+        display: flex;
+        margin: 0;
+    }
+
+    .nav__item{
+        margin: 0 0 0 1.5em;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* _______MAIN___________ */
+    .main__heading{
+        width: 62%;
+        /* text-align: left; */
+    }
+
+    .main__heading h1{
+        text-align: left;
+        font-size: 4rem;
+    }
+    .main__para{
+        width: 32%;
+    }
+    
+}
